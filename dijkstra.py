@@ -14,7 +14,7 @@ X.append(1)
 A[1] = 0
 myDict = {}
 
-for i in range(1, len(g)):
+while len(X) < len(g):
 	#Finding the neighbor with minimum distance
 	for v in X:
 		temp = {A[v]+g[v][neighbor]: neighbor for neighbor in g[v].keys() if neighbor not in X}
